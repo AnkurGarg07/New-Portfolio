@@ -20,7 +20,7 @@ const RecentProjects = () => {
                         key={item.id}
                     >
                         <PinContainer
-                            title="/ui.aceternity.com"
+                            title="Github"
                             href={item.link}
                         >
                             <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden  mb-10">
