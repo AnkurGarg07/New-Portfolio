@@ -11,7 +11,7 @@ const Experience = () => {
                     <span className="text-textSecondary">Work Experience</span>
                 </h1>
                 <div className=" flex items-center justify-center flex-wrap px-10 py-10 gap-[50px] ">
-                    {workExperience.map((card) => (
+                    {workExperience.map((card:any) => (
                         <ShineBorder
                             className="relative flex w-[450px] max-[1030px]:w-[410px] max-[968px]:w-[500px] h-[300px] flex-col items-center justify-center overflow-hidden rounded-[20px] border md:shadow-xl cursor-pointer
                             max-sm:h-[250px]"
