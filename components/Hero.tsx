@@ -22,7 +22,7 @@ const Hero  = () => {
                     />
                 </div>
                 <span
-                    className="mt-5 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-textPrimary to-slate-400/80 bg-clip-text text-center text-3xl font-semibold leading-none text-transparent max-[1095px]:text-xl px-5">Hi, I'm
+                    className="mt-5 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-textPrimary to-slate-400/80 bg-clip-text text-center text-3xl font-semibold leading-none text-transparent max-[1095px]:text-xl px-5">Hi, I&apos;m
                     <span className=" bg-gradient-to-t from-textSecondary to-slate-400/80 bg-clip-text leading-none text-transparent"> Ankur Garg</span>
                     , a passionate creator focused on crafting innovative digital solutions.</span>
                 <div className="z-10 flex mt-5 items-center justify-center bg-primaryDark">

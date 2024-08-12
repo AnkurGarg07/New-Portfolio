@@ -17,10 +17,11 @@ const Experience = () => {
                             max-sm:h-[250px]"
                             color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
                             duration={5}
+                            key={card.id}
                         >
                         <div
-                            className="flex lg:flex-row flex-col lg:items-centerpy-6 md:p-5 p-5 gap-2 "
-                            key={card.id}
+                            className="flex lg:flex-row flex-col lg:items-center py-6 md:p-5 p-5 gap-2 "
+
                         >
                             <img
                                 src={card.thumbnail}
