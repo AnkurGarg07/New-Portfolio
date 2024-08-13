@@ -10,7 +10,7 @@ const RecentProjects = () => {
         <>
         <div className="pt-20 max-sm:pt-10" id="projects">
             <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl text-center text-textPrimary px-5">
-                A small selection of{" "}
+                A small collection of{" "}
                 <span className="text-textSecondary">recent projects</span>
             </h1>
             <div className="flex flex-wrap items-center justify-center p-4 gap-x-24">
