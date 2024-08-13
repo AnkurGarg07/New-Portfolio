@@ -43,7 +43,7 @@ export const projects = [
         title: "ArtGround: Creative Hub",
         des: "Discover a curated collection of unique and original artworks from talented artists around the world",
         img: "/project2.png",
-        iconLists: ["django.webp",  "JavaScript.webp","/tail.svg", "/fm.svg"],
+        iconLists: ["/django.webp",  "/JavaScript.webp","/tail.svg", "/fm.svg"],
         link: "https://github.com/AnkurGarg07/ArtGround",
     },
     {
@@ -51,7 +51,7 @@ export const projects = [
         title: "JALA Magnus app",
         des: "Developed the Magnus application during my internship, delivering a powerful tool for managing the staff",
         img: "/project4.png",
-        iconLists: ["django.webp",  "JavaScript.webp","/tail.svg", "/fm.svg"],
+        iconLists: ["/django.webp",  "/JavaScript.webp","/tail.svg", "/fm.svg"],
         link: "https://github.com/AnkurGarg07/Magnus-project",
     },
     {
@@ -67,7 +67,7 @@ export const projects = [
         title: "The Tweet Project",
         des: "Project made during the learning phase of ReactJS with the power of appwrite for the backend",
         img: "/project1.png",
-        iconLists: ["/re.svg", "JavaScript.webp", "/tail.svg", "/app.svg", "/vercel.webp"],
+        iconLists: ["/re.svg", "/JavaScript.webp", "/tail.svg", "/app.svg", "/vercel.webp"],
         link: "https://github.com/AnkurGarg07/React-mega-project",
     },
 ];

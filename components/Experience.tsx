@@ -1,6 +1,7 @@
 import React from "react";
 import ShineBorder from "@/components/magicui/shine-border";
 import { workExperience } from "@/Data";
+import Image from "next/image";
 
 const Experience = () => {
     return (
@@ -23,11 +24,7 @@ const Experience = () => {
                             className="flex lg:flex-row flex-col lg:items-center py-6 md:p-5 p-5 gap-2 "
 
                         >
-                            <img
-                                src={card.thumbnail}
-                                alt={card.title} // Change alt text to something more descriptive
-                                className="lg:w-32 md:w-20 w-16"
-                            />
+                            <Image src={card.thumbnail} alt="logo" width={100} height={100} />
                             <div className="lg:ms-5">
                                 <h1 className="text-start text-xl md:text-2xl font-bold text-textSecondary max-[450px]:text-sm">
                                     {card.title}
