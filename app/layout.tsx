@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Ankur Garg | Developer & Educator",
   description: "Ankur Garg's personal portfolio showcasing expertise in web development, programming, and education. Explore projects, tutorials, and contributions to the tech community. Available for freelance opportunities and collaborations.",
   icons:{
-    icon:"/favicon.png"
+    icon:"/favIcon.png"
   },
   openGraph: {
     title: "Ankur Garg | Developer & Educator",
