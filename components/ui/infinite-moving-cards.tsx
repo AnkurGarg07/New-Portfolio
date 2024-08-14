@@ -15,6 +15,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
+    image:string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -26,7 +27,7 @@ export const InfiniteMovingCards = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  });
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -106,12 +107,13 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center gap-5">
                   <Image
-                      src='/profile.svg'
+                      src={item.image}
                       alt="cover"
                       width={50}
                       height={50}
                       quality={100}
                       loading="lazy"
+                      style={{ borderRadius: '50%' }}
                   />
                 <span className="flex flex-col gap-1">
                   <span className=" text-sm leading-[1.6] text-gray-400 font-normal">

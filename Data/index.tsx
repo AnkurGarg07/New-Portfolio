@@ -85,34 +85,26 @@ export const navItems = [
 export const testimonials = [
     {
         quote:
-            "Collaborating with Ankur was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ankur's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Ankur is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
+            "As I worked with Ankur on a Freelance Project, I found him very motivated and Excited about the work and learnings. He always tries to deliver his work on time and with very refinements. It was a great experience to work with him and looking for more opportunities for further collaborations.",
+        name: "Divanshu Soni",
+        title: "UI/UX designer",
+        image:"/avatar.png"
     },
     {
         quote:
             "Collaborating with Ankur was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ankur's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Ankur is the ideal partner.",
         name: "Michael Johnson",
         title: "Director of AlphaStream Technologies",
+        image:"/profile.svg"
     },
     {
         quote:
             "Collaborating with Ankur was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ankur's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Ankur is the ideal partner.",
         name: "Michael Johnson",
         title: "Director of AlphaStream Technologies",
+        image:"/profile.svg"
     },
-    {
-        quote:
-            "Collaborating with Ankur was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ankur's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Ankur is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Ankur was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ankur's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Ankur is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
+   
 ];
 
 
