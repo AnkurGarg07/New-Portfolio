@@ -92,10 +92,10 @@ export const testimonials = [
     },
     {
         quote:
-            "Collaborating with Ankur was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ankur's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Ankur is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-        image:"/profile.svg"
+            "Collaborating with Ankur on the development of our full-stack eCommerce website for art products was a seamless experience. His technical expertise and attention to detail ensured that the final product perfectly aligned with our vision. Ankur's commitment to delivering high-quality work made the entire process smooth and stress-free.",
+        name: "Divit Sahni",
+        title: "Student",
+        image:"/testimonial.jpg"
     },
     {
         quote:
