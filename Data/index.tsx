@@ -11,7 +11,7 @@ export const features = [
         description: "Connect with me on LinkedIn",
         href: "https://www.linkedin.com/in/ankur-garg07/",
         cta: "Connect",
-        background:<Image src="/card1.png" alt="Background" layout="fill" quality={100}  />,
+        background:<Image src="/card1.png" alt="Background" fill quality={100} className="object-cover" />,
         className: "col-span-3 bg-primaryBlack text-textPrimary",
     },
     {
@@ -20,7 +20,7 @@ export const features = [
         description: "Explore My GitHub Projects",
         href: "https://github.com/AnkurGarg07",
         cta: "Connect",
-        background: <Image src="/github.jpg" alt="Background" layout="fill" quality={100} objectFit="cover"/>,
+        background: <Image src="/github.jpg" alt="Background" fill quality={100} className="object-cover"/>,
         className: "col-span-3 text-textPrimary ",
     },
     {
@@ -30,7 +30,8 @@ export const features = [
         href: "mailto:ankurgarg89p@gmail.com",
         cta: "Connect",
 
-        background: <Image src="/gmail.jpg" alt="Background" layout="fill" quality={100} objectFit="cover"/>,
+        background: <Image src="/email.png" alt="Background" fill
+         quality={100} className="object-cover" />,
         className: "col-span-3 bg-primaryBlack text-textPrimary ",
     },
 
@@ -48,20 +49,21 @@ export const projects = [
     },
     {
         id: 2,
+        title: "MockVox",
+        des: "An AI powered voice assisted mock interview platform that helps users prepare for interviews",
+        img: "/project3.png",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/gemini.svg"],
+        link: "https://github.com/AnkurGarg07/MockVox",
+    },
+    {
+        id: 3,
         title: "JALA Magnus app",
         des: "Developed the Magnus application during my internship, delivering a powerful tool for managing the staff",
         img: "/project4.png",
         iconLists: ["/django.webp",  "/JavaScript.webp","/tail.svg", "/fm.svg"],
         link: "https://github.com/AnkurGarg07/Magnus-project",
     },
-    {
-        id: 3,
-        title: "Personal Portfolio",
-        des: "Explore my portfolio, built with Next.js, featuring cool components crafted with AccertinityUI and MagicUI for a stunning and interactive experience.",
-        img: "/project3.png",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/magicui.webp"],
-        link: "https://github.com/AnkurGarg07/New-Portfolio",
-    },
+    
     {
         id: 4,
         title: "The Tweet Project",

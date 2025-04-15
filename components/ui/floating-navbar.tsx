@@ -56,7 +56,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border border-white/[0.2] bg-primaryDark rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-10 py-5  items-center justify-center space-x-4 max-[425px]:flex-col max-[425px]:max-w-full max-[425px]:py-[15px] max-[425px]:mx-[60px] max-[425px]:gap-[10px] max-[425px]:rounded-[35px]",
+          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border border-transparen rounded-full bg-primary-dark shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-8 py-3 items-center justify-center dark:border-slate-800 text-text-nav gap-3 ",
           className
         )}
       >
@@ -65,11 +65,11 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative items-center flex space-x-1 text-textPrimary dark:hover:text-neutral-300 hover:text-neutral-500"
+              "relative text-text-primary items-center flex dark:hover:text-text-secondary hover:text-neutral-500"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className=" block text-sm">{navItem.name}</span>
+            <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>

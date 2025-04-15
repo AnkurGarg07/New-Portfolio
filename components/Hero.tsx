@@ -1,4 +1,4 @@
-import Meteors from "@/components/magicui/meteors";
+import {Meteors} from "@/components/magicui/meteors"
 import { cn } from "@/lib/utils";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import ShimmerButton from "@/components/magicui/shimmer-button";
@@ -14,16 +14,16 @@ const Hero  = () => {
                 <div className="flex gap-3 max-[1138px]:flex-col px-5  max-[554px]:p-0 max-[554px]:gap-0" >
                     <BlurIn
                         word="Turning Ideas into"
-                        className="pointer-events-none whitespace-pre-wrap bg-gradient-to-t from-white to-slate-600/60 bg-clip-text text-center text-3xl font-semibold leading-none text-transparent max-[426px]:text-[40px]"
+                        className="pointer-events-none whitespace-pre-wrap bg-linear-to-t from-white to-slate-600/60 bg-clip-text text-center text-3xl font-semibold leading-none text-transparent max-[426px]:text-[40px]"
                     />
                     <BlurIn
                         word="Digital Reality"
-                        className="bg-gradient-to-t from-textSecondary to-slate-400/80 bg-clip-text text-5xl  leading-none text-transparent max-[426px]:text-[40px]"
+                        className="bg-linear-to-t from-textSecondary to-slate-400/80 bg-clip-text text-5xl  leading-none text-transparent max-[426px]:text-[40px]"
                     />
                 </div>
                 <span
-                    className="mt-5 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-textPrimary to-slate-400/80 bg-clip-text text-center text-3xl font-semibold leading-none text-transparent max-[1095px]:text-xl px-5">Hi, I&apos;m
-                    <span className=" bg-gradient-to-t from-textSecondary to-slate-400/80 bg-clip-text leading-none text-transparent"> Ankur Garg</span>
+                    className="mt-5 pointer-events-none whitespace-pre-wrap bg-linear-to-b from-textPrimary to-slate-400/80 bg-clip-text text-center text-3xl font-semibold leading-none text-transparent max-[1095px]:text-xl px-5">Hi, I&apos;m
+                    <span className=" bg-linear-to-t from-textSecondary to-slate-400/80 bg-clip-text leading-none text-transparent"> Ankur Garg</span>
                     , a passionate creator focused on crafting innovative digital solutions.</span>
                 <div className="z-10 flex mt-5 items-center justify-center bg-primaryDark">
                     <Link href="#projects" passHref>
@@ -38,7 +38,7 @@ const Hero  = () => {
                         </ShimmerButton>
                     </Link>
                 </div>
-                <Meteors number={60}/>
+                <Meteors number={20}/>
                 <AnimatedGridPattern
                     numSquares={30}
                     maxOpacity={0.1}
@@ -49,6 +49,8 @@ const Hero  = () => {
                         "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
                     )}
                 />
+
+                
 
             </div>
         </>

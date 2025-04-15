@@ -1,4 +1,4 @@
-import IconCloud from "@/components/magicui/icon-cloud";
+import { IconCloud } from "@/components/magicui/icon-cloud";
 import {ShootingStars} from "@/components/ui/shooting-stars";
 import {StarsBackground} from "@/components/ui/stars-background";
 
@@ -23,14 +23,21 @@ const slugs = [
     'python',
     'tailwindcss',
     'bootstrap',
-    'netlify'
+    'netlify',
+    'googlegemini'
 
 ];
 
 export function Skills() {
+
+    const images = slugs.map(
+        (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+      );
+    
+    
     return (
-        <div id="skills" className="relative flex h-full w-full items-center justify-center overflow-hidden bg-background px-20 pb-10">
-        <IconCloud iconSlugs={slugs} />
+        <div id="skills" className="relative flex h-full w-full items-center justify-center overflow-hidden bg-background px-20 pb-10 ">
+        <IconCloud images={images} />
             <ShootingStars />
             <StarsBackground />
     </div>

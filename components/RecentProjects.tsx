@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {projects} from "@/Data";
 import {PinContainer} from "@/components/ui/3d-pin";
 import {FaLocationArrow} from "react-icons/fa";
@@ -8,10 +9,10 @@ import Image from "next/image";
 const RecentProjects = () => {
     return (
         <>
-        <div className="pt-20 max-sm:pt-10" id="projects">
-            <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl text-center text-textPrimary px-5">
+        <div className="pt-20 max-sm:pt-10 text-text-primary" id="projects">
+            <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl text-center  px-5">
                 A small collection of{" "}
-                <span className="text-textSecondary">recent projects</span>
+                <span className="">recent projects</span>
             </h1>
             <div className="flex flex-wrap items-center justify-center p-4 gap-x-24">
                 {projects.map((item) => (
@@ -37,7 +38,7 @@ const RecentProjects = () => {
                                         top: '40px',
                                         transform: 'rotate(6deg)'
                                     }}
-                                    layout="fill"
+                                    fill
                                     quality={100}
                                     loading="lazy"
                                 />
@@ -67,7 +68,7 @@ const RecentProjects = () => {
                                                 transform: `translateX(-${5 * index + 2}px)`,
                                             }}
                                         >
-                                            <Image src={icon} alt="icon5" className="p-2" layout="fill" />
+                                            <Image src={icon} alt="icon5" className="p-2"fill />
                                         </div>
                                     ))}
                                 </div>

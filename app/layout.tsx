@@ -37,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en dark">
-      <body className={`${poppins.className} bg-primaryDark scroll-smooth`}  >{children}</body>
+    <html lang="dark">
+      <body className={`${poppins.className} bg-primary-dark scroll-smooth`}  >{children}</body>
     </html>
   );
 }

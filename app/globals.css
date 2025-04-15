@@ -1,65 +1,210 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
 
-@layer base {
-    :root {
-        --background: 0 0% 100%;
-        --foreground: 240 10% 3.9%;
+@theme {
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-meteor: meteor 5s linear infinite;
+  --animate-spin-around: spin-around calc(var(--speed) * 2) infinite linear;
+  --animate-slide: slide var(--speed) ease-in-out infinite alternate;
+  --animate-border-beam: border-beam calc(var(--duration) * 1s) infinite linear;
+  --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
 
-        --card: 0 0% 100%;
-        --card-foreground: 240 10% 3.9%;
+  --color-primary-dark: #1d2029;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cbacf9;
+  --color-paragraph: #e4ecff;
+  --color-text-nav: #c1c2d3;
 
-        --popover: 0 0% 100%;
-        --popover-foreground: 240 10% 3.9%;
-
-        --primary: 240 5.9% 10%;
-        --primary-foreground: 0 0% 98%;
-
-        --secondary: 240 4.8% 95.9%;
-        --secondary-foreground: 240 5.9% 10%;
-
-        --muted: 240 4.8% 95.9%;
-        --muted-foreground: 240 3.8% 46.1%;
-
-        --accent: 240 4.8% 95.9%;
-        --accent-foreground: 240 5.9% 10%;
-
-        --destructive: 0 84.2% 60.2%;
-        --destructive-foreground: 0 0% 98%;
-
-        --border: 240 5.9% 90%;
-        --input: 240 5.9% 90%;
-        --ring: 240 10% 3.9%;
-
-        --radius: 0.5rem;
+  --breakpoint-480px: 480px;
+  --bg-primaryDark:rgb(29, 32, 41) @keyframes accordion-down {
+    from {
+      height: 0;
     }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes spin-around {
+    0% {
+      transform: translateZ(0) rotate(0);
+    }
+    15%,
+    35% {
+      transform: translateZ(0) rotate(90deg);
+    }
+    65%,
+    85% {
+      transform: translateZ(0) rotate(270deg);
+    }
+    100% {
+      transform: translateZ(0) rotate(360deg);
+    }
+  }
+  @keyframes slide {
+    to {
+      transform: translate(calc(100cqw - 100%), 0);
+    }
+  }
+  @keyframes border-beam {
+    100% {
+      offset-distance: 100%;
+    }
+  }
+  @keyframes shine-pulse {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    to {
+      background-position: 0% 0%;
+    }
+  }
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  @media (width >= --theme(--breakpoint-480px)) {
+    max-width: none;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
 @layer base {
-    * {
-        @apply !scroll-smooth;
-    }
-    button {
-        @apply active:outline-none;
-    }
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+  button:active {
+    outline: none;
+  }
 }
 
 ::-webkit-scrollbar {
-    width: 8px; /* Width of the entire scrollbar */
+  width: 8px; /* Width of the entire scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-    background: #1D2029; /* Color of the track */
+  background: #1d2029; /* Color of the track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #555; /* Color of the scrollbar thumb */
-    border-radius: 5px; /* Rounded corners */
-    border: 2px solid #1D2029; /* Padding around the thumb */
+  background-color: #555; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners */
+  border: 2px solid #1d2029; /* Padding around the thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #CBACF9; /* Color of the thumb when hovered */
+  background-color: #cbacf9; /* Color of the thumb when hovered */
+}
+
+/*
+  ---break---
+*/
+
+@theme inline {
+  --animate-meteor: meteor 5s linear infinite;
+  @keyframes meteor {
+    0% {
+      transform: rotate(var(--angle)) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(var(--angle)) translateX(-500px);
+      opacity: 0;
+    }
+  }
+  --animate-shine: shine var(--duration) infinite linear
+;
+  @keyframes shine {
+  0% {
+    background-position: 0% 0%;}
+  50% {
+    background-position: 100% 100%;}
+  to {
+    background-position: 0% 0%;}}}
+
+@theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
 }

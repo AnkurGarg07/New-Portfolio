@@ -1,11 +1,11 @@
 import React from "react";
-import {InfiniteMovingCards} from "@/components/ui/infinite-moving-cards";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import {testimonials} from "@/Data";
 
 const Clients = () => {
     return (
       <>
-          <div className="pt-20" id="testimonials">
+          <div className="pt-20 text-text-primary" id="testimonials" >
               <h1 className="font-bold text-4xl md:text-5xl text-center text-textPrimary">
                   Kind words from{" "}
                   <span className="text-textSecondary">Clients and colleagues</span>

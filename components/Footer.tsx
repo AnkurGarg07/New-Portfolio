@@ -14,7 +14,7 @@ const Footer = () => {
         id="contact"
       >
         <div className="flex flex-col items-center w-[50%] max-sm:w-[80%]">
-          <h1 className="font-bold text-4xl md:text-5xl text-center text-textPrimary">
+          <h1 className="font-bold text-4xl md:text-5xl text-center text-text-primary">
             Ready to take <span className="text-textSecondary">your</span>{" "}
             digital presence to the next level?
           </h1>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div className="w-full flex mt-16 md:flex-row flex-col justify-between items-center px-10 gap-[10px]">
           <p className="md:text-base text-sm md:font-normal font-light text-paragraph">
-            Copyright © 2024 Ankur Garg
+            Copyright © 2025 Ankur Garg
           </p>
 
           <div className="flex items-center md:gap-3 gap-6">
