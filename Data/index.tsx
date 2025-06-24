@@ -101,10 +101,10 @@ export const testimonials = [
     },
     {
         quote:
-            "Collaborating with Ankur was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Ankur's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Ankur is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-        image:"/profile.svg"
+            "It was a great experience working with Ankur on one of my frontend website project. He was calm enough to listen to all the requirenments and implementing them in lesser time then I anicipated. All in all, I highly recommend Ankur to other for web development projects.",
+        name: "Kalash Bansal",
+        title: "Founder of Maze Gambit Agency",
+        image:"/mga.png"
     },
    
 ];
